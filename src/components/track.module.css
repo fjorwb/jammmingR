@@ -1,0 +1,17 @@
+.container {
+    background: #444;
+    color: #fff111;
+    line-height: .75rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px #000;
+
+}
+
+.trackname {
+    border-bottom: 1px solid #000;
+    line-height: 2.5rem;
+    background: #111;
+    padding: .5rem;
+}
