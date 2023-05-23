@@ -47,3 +47,8 @@
     margin-right: .5rem;
     font-weight: 700;
 }
+
+.btn:hover {
+    background: #fff111;
+    color: #444;
+}

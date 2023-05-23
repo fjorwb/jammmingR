@@ -16,8 +16,11 @@ body {
   height: auto;
   aspect-ratio: 16 / 9;
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   justify-content: center;
+  background-image: url(https://img.freepik.com/foto-gratis/vista-posterior-multitud-fans-viendo-actuaciones-directo-concierto-musica-noche-copiar-espacio_637285-544.jpg?w=1060&t=st=1684817665~exp=1684818265~hmac=c4aec10ed64ccc82f0934db08531747dd5c53a532ce012445816ad6bb47a9008);
+  background-size: cover;
+
 }
 
 code {

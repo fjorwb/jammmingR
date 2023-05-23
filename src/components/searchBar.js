@@ -9,12 +9,16 @@ import tracks from '../mocks/tracks.json'
 import flatObj from '../utils/flattenObject'
 import getTracks from '../utils/tracks'
 
+let data
+let data1
+
 export default function SearchBar ({ setSearchResults }) {
   const [search, setSearch] = useState('')
   const [searchTerms, setSearchTerms] = useState('')
 
   console.log(search)
   console.log(searchTerms)
+
   // const { results, loading, error } = useSpotifySearch('italian', 'playlist')
   // console.log(Object.entries(results))
   // console.log(loading, error)
@@ -29,10 +33,12 @@ export default function SearchBar ({ setSearchResults }) {
     console.log('submitted')
   }
 
-  const data = flatObj(tracks)
-  console.log('data', data)
-  const data1 = getTracks(data)
-  console.log('data1', data1)
+  useEffect(() => {
+    data = flatObj(tracks)
+    console.log('data', data)
+    data1 = getTracks(data)
+    console.log('data1', data1)
+  }, [searchTerms])
 
   useEffect(() => {
     setSearchResults(data1)
