@@ -5,7 +5,6 @@ import Track from './track'
 export default function TracksList ({ tracks }) {
   return (
     <div>
-      <h1>Track List</h1>
       <ul>
         {tracks.map(track => {
           return (

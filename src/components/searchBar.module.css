@@ -1,4 +1,5 @@
 .container {
-    background: red;
+    background: rgb(71, 63, 63);
     color: #fff111;
+    padding: 1rem 0;
 }

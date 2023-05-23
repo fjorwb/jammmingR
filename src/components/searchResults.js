@@ -1,12 +1,17 @@
 import React from 'react'
 
-function searchResults () {
+import TrackList from './tracklist'
+
+import styles from './searchResults.module.css'
+
+function SearchResults ({ tracks }) {
   return (
-    <div>
+    <div className={styles.container}>
       <h1>Search Results</h1>
+      <TrackList tracks={tracks} />
 
     </div>
   )
 }
 
-export default searchResults
+export default SearchResults

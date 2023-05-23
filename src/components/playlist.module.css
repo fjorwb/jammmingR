@@ -1,0 +1,9 @@
+.container {
+    min-height: 50vh;
+    border: 1px solid #ccc;
+    margin-top: 1rem;
+    padding: 0 1rem;
+    padding-bottom: 1rem;
+    background: #111;
+    opacity: .7;
+}

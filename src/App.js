@@ -1,6 +1,7 @@
 import './App.css'
 
-import TracksList from './components/tracklist'
+import SearchResults from './components/searchResults'
+// import TracksList from './components/tracklist'
 import SearchBar from './components/searchBar'
 import Playlist from './components/playlist'
 
@@ -25,7 +26,8 @@ function App () {
       <h1>Jammming</h1>
       <SearchBar />
       <div className='container'>
-        <TracksList tracks={data1} />
+        <SearchResults tracks={data1} />
+        {/* <TracksList tracks={data1} /> */}
         <Playlist />
       </div>
     </div>
