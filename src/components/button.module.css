@@ -1,0 +1,21 @@
+.btn {
+    color: rgb(10, 10, 10);
+    background: #444;
+    cursor: pointer;
+    /* transition: all .2s ease-in-out; */
+    /* padding: 0 1rem; */
+    font-size: 1.5rem;
+    /* margin: 0; */
+    width: 30px;
+    height: 30px;
+    justify-self: center;
+    border-radius: 50%;
+    /* margin-right: .5rem; */
+    font-weight: 700;
+    /* margin-left: 2rem; */
+}
+
+.btn:hover {
+    background: #fff111;
+    color: #444;
+}
