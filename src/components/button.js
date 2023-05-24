@@ -4,6 +4,7 @@ import styles from './button.module.css'
 
 export default function Button ({ track, playlist, setPlaylist, content }) {
   function handleAddTrack () {
+    if (playlist.some(item => item.id === track.id)) return
     setPlaylist(prev => [...prev, track])
   }
 

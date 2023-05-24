@@ -5,7 +5,7 @@ import styles from './playlist.module.css'
 import Button from './button'
 import Track from './track'
 
-export default function Playlist ({ playlist, setPlaylist }) {
+export default function Playlist ({ playlist, setPlaylist, playlistName, setPlaylistName }) {
   function handleSaveToSpotify (e) {
     e.preventDefault()
     console.log('save to spotify')
@@ -13,7 +13,8 @@ export default function Playlist ({ playlist, setPlaylist }) {
 
   return (
     <div className={styles.container}>
-      <h1>Playlist</h1>
+      {/* <h1>{playlistName}</h1> */}
+      <input onChange={e => setPlaylistName(e.target.value)} placeholder='enter your list name' />
       <div>
         {playlist?.map((track, index) => {
           return (

@@ -5,7 +5,7 @@ import styles from './tracklist.module.css'
 import Track from './track'
 import Button from './button'
 
-export default function TracksList ({ tracks, setPlaylist }) {
+export default function TracksList ({ tracks, playlist, setPlaylist }) {
   return (
     <div>
       <ul>
@@ -14,7 +14,7 @@ export default function TracksList ({ tracks, setPlaylist }) {
             <li key={track.id} className={styles.container}>
               <Track track={track} />
               <div className={styles.btncontainer}>
-                <Button track={track} setPlaylist={setPlaylist} content='+' />
+                <Button track={track} playlist={playlist} setPlaylist={setPlaylist} content='+' />
               </div>
             </li>
           )

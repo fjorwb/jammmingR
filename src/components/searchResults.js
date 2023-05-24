@@ -4,12 +4,11 @@ import TrackList from './tracklist'
 
 import styles from './searchResults.module.css'
 
-function SearchResults ({ tracks, setPlaylist }) {
+function SearchResults ({ tracks, playlist, setPlaylist }) {
   return (
     <div className={styles.container}>
-      <h1>Search Results</h1>
-      <TrackList tracks={tracks} setPlaylist={setPlaylist} />
-
+      <h1 className={styles.title}>Search Results</h1>
+      <TrackList tracks={tracks} playlist={playlist} setPlaylist={setPlaylist} />
     </div>
   )
 }
