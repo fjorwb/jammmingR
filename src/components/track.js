@@ -7,7 +7,6 @@ export default function track ({ track }) {
     <div className={styles.container}>
       <div className={styles.subcontainer}>
         <h3 className={styles.trackname}>{track.name}</h3>
-        <button type='button' className={styles.btn}>+</button>
       </div>
 
       {/* <p>{track.id}</p> */}

@@ -1,19 +1,30 @@
-import React, { useState } from 'react'
+import React from 'react'
 
 import styles from './playlist.module.css'
 
-export default function Playlist () {
-  const [playlist, setPlaylist] = useState([])
-  console.log(playlist)
+import Button from './button'
+import Track from './track'
 
-  function handleChange (e) {
-    setPlaylist(e.target.value)
+export default function Playlist ({ playlist, setPlaylist }) {
+  function handleSaveToSpotify (e) {
+    e.preventDefault()
+    console.log('save to spotify')
   }
 
   return (
     <div className={styles.container}>
       <h1>Playlist</h1>
-      <button type='button' className={styles.btn} onChange={handleChange}>Save To Spotify</button>
+      <div>
+        {playlist?.map((track, index) => {
+          return (
+            <div key={index} className={styles.subcontainer}>
+              <Track track={track} />
+              <Button playlist={playlist} setPlaylist={setPlaylist} track={track} content='-' />
+            </div>
+          )
+        })}
+      </div>
+      <button type='button' className={styles.btn} onClick={handleSaveToSpotify}>Save To Spotify</button>
 
     </div>
   )

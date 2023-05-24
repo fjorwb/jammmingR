@@ -16,8 +16,8 @@ export default function SearchBar ({ setSearchResults }) {
   const [search, setSearch] = useState('')
   const [searchTerms, setSearchTerms] = useState('')
 
-  console.log(search)
-  console.log(searchTerms)
+  // console.log(search)
+  // console.log(searchTerms)
 
   // const { results, loading, error } = useSpotifySearch('italian', 'playlist')
   // console.log(Object.entries(results))
@@ -35,9 +35,9 @@ export default function SearchBar ({ setSearchResults }) {
 
   useEffect(() => {
     data = flatObj(tracks)
-    console.log('data', data)
+    // console.log('data', data)
     data1 = getTracks(data)
-    console.log('data1', data1)
+    // console.log('data1', data1)
   }, [searchTerms])
 
   useEffect(() => {
