@@ -9,7 +9,7 @@ export default function TracksList ({ tracks, playlist, setPlaylist }) {
   return (
     <div>
       <ul>
-        {tracks.map(track => {
+        {tracks?.map(track => {
           return (
             <li key={track.id} className={styles.container}>
               <Track track={track} />
