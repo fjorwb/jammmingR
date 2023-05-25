@@ -1,25 +1,23 @@
 .container {
-    min-height: 50vh;
-    border: 1px solid #ccc;
-    margin-top: 1rem;
     padding: 0 1rem;
-    padding-bottom: 1rem;
+    padding-bottom: 2rem;
     background: #111;
     opacity: .85;
     border-radius: 8px;
+    height: 27vmax;
+    overflow: scroll;
+}
+
+.titlecontainer {
+    background: #111;
+    opacity: .85;
+    padding: 0.005rem;
+    border-radius: 5px;
 }
 
 .title {
     width: 100%;
-    border: 0;
-    background: transparent;
-    /* border-bottom: 1px solid #6f6f6f; */
-    /* font-family: 'Poppins', sans-serif; */
-    font-size: 2rem;
+    font-size: 1.75rem;
     color: #fff;
-    margin-block-start: 0.67em;
-    margin-block-end: 0.67em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
     font-weight: bold;
 }

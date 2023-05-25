@@ -21,19 +21,20 @@
     font-weight: 600;
 } */
 
-.input {
+.inputsearch {
     min-width: 300px;
     border: 1px solid #fff111;
     border-radius: 20px;
-    line-height: 2rem;
+    line-height: 1rem;
     margin-top: 1rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     font-size: 1.5rem;
     padding-left: 1rem;
     text-align: center;
+    padding: .75rem;
 }
 
-.input:focus {
+.inputsearch:focus {
     border: 5px solid #db6605;
     /* outline: #db6605; */
 }
