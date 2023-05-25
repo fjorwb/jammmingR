@@ -2,12 +2,15 @@ import React from 'react'
 
 import styles from './playlist.module.css'
 
+import savePlaylistToSpotify from '../utils/savePlaylistToSpotify'
+
 import Button from './button'
 import Track from './track'
 
 export default function Playlist ({ playlist, setPlaylist, playlistName, setPlaylistName }) {
   function handleSaveToSpotify (e) {
     e.preventDefault()
+    savePlaylistToSpotify(playlistName, playlist)
     console.log('save to spotify')
   }
 

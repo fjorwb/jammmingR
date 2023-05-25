@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 
 import './App.css'
 
@@ -6,11 +6,24 @@ import SearchBar from './components/searchBar'
 import SearchResults from './components/searchResults'
 import Playlist from './components/playlist'
 
+import getUserPlaylists from './utils/getUserPlaylists'
+
 function App () {
   const [searchResults, setSearchResults] = useState([])
   const [playlist, setPlaylist] = useState([])
   const [playlistName, setPlaylistName] = useState('New Playlist')
-  // console.log('addPlaylist', playlist)
+  const [userPlaylists, setUserPlaylists] = useState([])
+
+  useEffect(() => {
+    getUserPlaylists()
+      .then(data => {
+        // console.log(data)
+        setUserPlaylists(data)
+      })
+      .catch(error => console.log(error))
+  }, [])
+
+  console.log('userList ', userPlaylists)
 
   return (
     <div className='App'>

@@ -70,30 +70,4 @@ const useSpotifySearch = (query, type) => {
   return { results, loading, error }
 }
 
-// Usage example in a component
-// const SearchComponent = () => {
-//   const { results, loading, error } = useSpotifySearch('Coldplay', 'artist')
-
-//   if (loading) {
-//     return <p>Loading...</p>
-//   }
-
-//   if (error) {
-//     return <p>Error: {error.message}</p>
-//   }
-
-//   return (
-//     <div>
-//       {/* Display the search results */}
-//       {results && results.artists && results.artists.items && (
-//         <ul>
-//           {results.artists.items.map((artist) => (
-//             <li key={artist.id}>{artist.name}</li>
-//           ))}
-//         </ul>
-//       )}
-//     </div>
-//   )
-// }
-
 export default useSpotifySearch
